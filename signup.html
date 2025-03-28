@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - EduVenture Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="auth-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>EduVenture Nexus</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="startups.html">Startups</a></li>
+            <li><a href="your-plan.html">Your Plan</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="ai-modules.html">AI Modules</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="feed.html">Feed</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn secondary">Login</a>
+            <a href="signup.html" class="btn primary">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="auth-header">
+                <h2>Create Your Account</h2>
+                <p>AI-powered learning platform for education, careers, and innovation</p>
+            </div>
+
+            <!-- Progress Steps -->
+            <div class="progress-steps">
+                <div class="step active" data-step="1">
+                    <div class="step-number">1</div>
+                    <div class="step-label">Core Profile</div>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="step-number">2</div>
+                    <div class="step-label">Goals</div>
+                </div>
+                <div class="step" data-step="3">
+                    <div class="step-number">3</div>
+                    <div class="step-label">Preview</div>
+                </div>
+            </div>
+
+            <!-- Step 1: Core Profile -->
+            <form class="auth-form" id="signupForm" data-step="1">
+                <div class="form-group">
+                    <label for="userType">I'm a:</label>
+                    <select id="userType" required>
+                        <option value="">Select your role</option>
+                        <option value="student">Student</option>
+                        <option value="professional">Professional</option>
+                        <option value="founder">Founder</option>
+                        <option value="recruiter">Recruiter</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Years of Experience:</label>
+                    <div class="input-group">
+                        <input type="number" id="experience" min="0" required>
+                        <div class="ai-status">
+                            <i class="fas fa-robot"></i>
+                            <span>Validating with LinkedIn...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Priority:</label>
+                    <div class="priority-options">
+                        <label class="priority-option">
+                            <input type="radio" name="priority" value="learning" required>
+                            <span class="priority-icon">🎓</span>
+                            <span>Learning</span>
+                        </label>
+                        <label class="priority-option">
+                            <input type="radio" name="priority" value="career" required>
+                            <span class="priority-icon">💼</span>
+                            <span>Career</span>
+                        </label>
+                        <label class="priority-option">
+                            <input type="radio" name="priority" value="startup" required>
+                            <span class="priority-icon">🚀</span>
+                            <span>Startup</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn primary">Next: Set Your Goals</button>
+            </form>
+
+            <!-- Step 2: Goal Elicitation -->
+            <form class="auth-form hidden" id="goalsForm" data-step="2">
+                <div class="ai-interview">
+                    <div class="interview-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <span class="progress-text">2 more questions ≈ 30s</span>
+                    </div>
+
+                    <div class="question-container">
+                        <div class="question">
+                            <h3>What's your dream job?</h3>
+                            <div class="input-group">
+                                <input type="text" placeholder="Type your answer...">
+                                <button type="button" class="btn secondary">Not Sure?</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn secondary" onclick="previousStep()">Back</button>
+                    <button type="submit" class="btn primary">Next: Preview Plan</button>
+                </div>
+            </form>
+
+            <!-- Step 3: Personalization Preview -->
+            <div class="auth-form hidden" id="previewForm" data-step="3">
+                <div class="preview-header">
+                    <h3>Your 30-Day Onboarding Plan</h3>
+                    <div class="tempo-selector">
+                        <button class="btn secondary">Too Fast</button>
+                        <button class="btn secondary">Too Slow</button>
+                    </div>
+                </div>
+
+                <div class="timeline-preview">
+                    <div class="timeline-week">
+                        <h4>Week 1</h4>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div class="item-content">
+                                    <h5>AI Course: Python Basics</h5>
+                                    <p>Based on your selected tech stack</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <i class="fas fa-users"></i>
+                                <div class="item-content">
+                                    <h5>Community: Early-Stage Founders</h5>
+                                    <p>Join your peer group</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-week">
+                        <h4>Week 2</h4>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <i class="fas fa-code"></i>
+                                <div class="item-content">
+                                    <h5>Project: Build CLI Tool</h5>
+                                    <p>Hands-on learning experience</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <i class="fas fa-handshake"></i>
+                                <div class="item-content">
+                                    <h5>Event: VC Office Hours</h5>
+                                    <p>Network with investors</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn secondary" onclick="previousStep()">Back</button>
+                    <button type="submit" class="btn primary">Complete Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Recommendation Panel -->
+        <div class="recommendation-panel">
+            <div class="recommendation-header">
+                <i class="fas fa-robot"></i>
+                <h3>AI Recommendations</h3>
+            </div>
+            <div class="recommendation-content">
+                <div class="recommendation-item">
+                    <div class="recommendation-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="recommendation-text">
+                        <h4>Based on your profile</h4>
+                        <p>We've unlocked specialized courses and resources</p>
+                    </div>
+                </div>
+                <div class="recommendation-item">
+                    <div class="recommendation-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="recommendation-text">
+                        <h4>Community Match</h4>
+                        <p>You'll be connected with like-minded learners</p>
+                    </div>
+                </div>
+                <div class="recommendation-item">
+                    <div class="recommendation-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="recommendation-text">
+                        <h4>Career Path</h4>
+                        <p>Personalized roadmap to your goals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chat Widget -->
+    <div class="ai-chat-widget">
+        <button class="chat-toggle">
+            <i class="fas fa-robot"></i>
+            <span>AI Assistant</span>
+        </button>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h4>AI Assistant</h4>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <div class="message ai">
+                    <p>Hello! I'll guide you through the signup process. Let's start by creating your profile.</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

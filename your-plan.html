@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Plan - EduVenture Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="your-plan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>EduVenture Nexus</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="startups.html">Startups</a></li>
+            <li><a href="your-plan.html">Your Plan</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="ai-modules.html">AI Modules</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="feed.html">Feed</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn secondary">Login</a>
+            <a href="signup.html" class="btn primary">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="plan-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Your Command Center</h2>
+                <div class="ai-status">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Assistant Active</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="#overview" class="nav-item active">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Progress Overview</span>
+                </a>
+                <a href="#learning" class="nav-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Learning Path</span>
+                </a>
+                <a href="#career" class="nav-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Career Goals</span>
+                </a>
+                <a href="#startup" class="nav-item">
+                    <i class="fas fa-rocket"></i>
+                    <span>Startup Journey</span>
+                </a>
+            </nav>
+
+            <div class="quick-stats">
+                <div class="stat-card">
+                    <i class="fas fa-clock"></i>
+                    <div class="stat-info">
+                        <span class="label">Study Hours</span>
+                        <span class="value">24/40</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-tasks"></i>
+                    <div class="stat-info">
+                        <span class="label">Goals Completed</span>
+                        <span class="value">12/15</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <div class="stat-info">
+                        <span class="label">Skill Level</span>
+                        <span class="value">Advanced</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Panel -->
+        <main class="main-panel">
+            <div class="panel-header">
+                <h1>Your Personalized Growth Plan</h1>
+                <div class="ai-suggestions">
+                    <div class="suggestion-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <p>Complete AWS Cloud Practitioner before Solutions Architect</p>
+                        <button class="btn primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Tracker -->
+            <section class="progress-tracker">
+                <h2>Skill & Career GPS</h2>
+                <div class="progress-grid">
+                    <div class="radar-chart">
+                        <canvas id="skillsRadar"></canvas>
+                    </div>
+                    <div class="certification-roadmap">
+                        <h3>Certification Roadmap</h3>
+                        <div class="cert-list">
+                            <div class="cert-item completed">
+                                <div class="cert-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>AWS Cloud Practitioner</h4>
+                                    <p>Completed: March 15, 2024</p>
+                                </div>
+                            </div>
+                            <div class="cert-item active">
+                                <div class="cert-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>AWS Solutions Architect</h4>
+                                    <p>Target: June 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Recommendations -->
+            <section class="ai-recommendations">
+                <h2>AI-Powered Recommendations</h2>
+                <div class="recommendations-grid">
+                    <div class="recommendation-card">
+                        <div class="card-header">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Course Suggestions</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="suggestion-item">
+                                <h4>Python for Data Science</h4>
+                                <p>90% of engineers who took this course upskilled to ML roles</p>
+                                <button class="btn secondary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recommendation-card">
+                        <div class="card-header">
+                            <i class="fas fa-briefcase"></i>
+                            <h3>Job Matches</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="match-item">
+                                <h4>Senior ML Engineer</h4>
+                                <p>3 positions match your profile</p>
+                                <button class="btn secondary">View Matches</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recommendation-card">
+                        <div class="card-header">
+                            <i class="fas fa-rocket"></i>
+                            <h3>Startup Opportunities</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="opportunity-item">
+                                <h4>AI Startup CTO</h4>
+                                <p>3 early-stage startups seeking technical co-founders</p>
+                                <button class="btn secondary">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Career Simulator -->
+            <section class="career-simulator">
+                <h2>Career Simulator</h2>
+                <div class="simulator-container">
+                    <div class="scenario-selector">
+                        <button class="scenario-btn active">Current Path</button>
+                        <button class="scenario-btn">AI Focus</button>
+                        <button class="scenario-btn">Startup Path</button>
+                    </div>
+                    <div class="simulation-view">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="year">2024</span>
+                                <div class="role">
+                                    <h4>Senior Developer</h4>
+                                    <p>$120K - $150K</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="year">2025</span>
+                                <div class="role">
+                                    <h4>Tech Lead</h4>
+                                    <p>$150K - $180K</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="year">2026</span>
+                                <div class="role">
+                                    <h4>CTO</h4>
+                                    <p>$200K+</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Right Toolbar -->
+        <aside class="toolbar">
+            <div class="tool-section">
+                <h3>Today's Schedule</h3>
+                <div class="schedule-list">
+                    <div class="schedule-item">
+                        <div class="time">09:00</div>
+                        <div class="activity">
+                            <h4>Advanced Python</h4>
+                            <p>2 hours - Goal: 70% by Friday</p>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time">12:00</div>
+                        <div class="activity">
+                            <h4>LinkedIn Outreach</h4>
+                            <p>30 minutes - 5 connections</p>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time">18:00</div>
+                        <div class="activity">
+                            <h4>Startup Pitch Practice</h4>
+                            <p>1 hour</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-section">
+                <h3>AI Study Buddy</h3>
+                <div class="study-buddy">
+                    <div class="focus-mode">
+                        <h4>Focus Mode</h4>
+                        <div class="mode-status">
+                            <span class="status-indicator active"></span>
+                            <span>Active</span>
+                        </div>
+                        <button class="btn secondary">Configure</button>
+                    </div>
+                    <div class="knowledge-retention">
+                        <h4>Knowledge Check</h4>
+                        <p>Last studied React 3 weeks ago</p>
+                        <button class="btn primary">Refresh Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-section">
+                <h3>Notifications</h3>
+                <div class="notification-list">
+                    <div class="notification-item urgent">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div class="notification-content">
+                            <h4>Interview Invite</h4>
+                            <p>Google - Senior ML Engineer</p>
+                        </div>
+                    </div>
+                    <div class="notification-item">
+                        <i class="fas fa-bell"></i>
+                        <div class="notification-content">
+                            <h4>Course Reminder</h4>
+                            <p>Python course expires in 7 days</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>EduVenture Nexus is a transformative platform combining AI, VR/AR, and global community for education and innovation.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="startups.html">Startups</a></li>
+                    <li><a href="your-plan.html">Your Plan</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EduVenture Nexus. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AI Chat Widget -->
+    <div class="ai-chat-widget">
+        <button class="chat-toggle">
+            <i class="fas fa-robot"></i>
+            <span>AI Assistant</span>
+        </button>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h4>AI Assistant</h4>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <div class="message ai">
+                    <p>Hello! How can I help you with your career journey today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - EduVenture Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="careers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>EduVenture Nexus</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="startups.html">Startups</a></li>
+            <li><a href="your-plan.html">Your Plan</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="ai-modules.html">AI Modules</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="feed.html">Feed</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn secondary">Login</a>
+            <a href="signup.html" class="btn primary">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="careers-container">
+        <!-- Left Panel - Job Search -->
+        <aside class="search-panel">
+            <div class="search-header">
+                <h2>Find Your Dream Job</h2>
+                <div class="ai-match">
+                    <i class="fas fa-robot"></i>
+                    <span>AI-Powered Matching</span>
+                </div>
+            </div>
+            
+            <div class="search-filters">
+                <div class="filter-group">
+                    <h3>Skills Match</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">React</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Data Analysis</span>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Experience Level</h3>
+                    <div class="radio-group">
+                        <label><input type="radio" name="experience" value="entry"> Entry Level</label>
+                        <label><input type="radio" name="experience" value="mid"> Mid Level</label>
+                        <label><input type="radio" name="experience" value="senior"> Senior Level</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Location</h3>
+                    <div class="location-options">
+                        <label><input type="checkbox" name="location" value="remote"> Remote</label>
+                        <label><input type="checkbox" name="location" value="hybrid"> Hybrid</label>
+                        <label><input type="checkbox" name="location" value="onsite"> On-site</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Company Size</h3>
+                    <select class="company-size">
+                        <option value="startup">Startup (1-50)</option>
+                        <option value="small">Small (51-200)</option>
+                        <option value="medium">Medium (201-1000)</option>
+                        <option value="large">Large (1000+)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="ai-recommendations">
+                <h3>AI Recommendations</h3>
+                <div class="recommendation-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>Learn PySpark to unlock 42% more roles</p>
+                    <button class="btn primary">Start Course</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Center Panel - Job Listings -->
+        <main class="listings-panel">
+            <div class="listings-header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search jobs, companies, or skills...">
+                    <button class="btn primary"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="view-options">
+                    <button class="btn secondary active"><i class="fas fa-list"></i> List</button>
+                    <button class="btn secondary"><i class="fas fa-th-large"></i> Grid</button>
+                </div>
+            </div>
+
+            <div class="job-listings">
+                <!-- Job Card 1 -->
+                <div class="job-card urgent">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <img src="https://via.placeholder.com/50" alt="Company Logo">
+                        </div>
+                        <div class="job-title">
+                            <h3>Senior Full Stack Developer</h3>
+                            <p class="company">TechCorp Inc.</p>
+                        </div>
+                        <div class="match-score">
+                            <div class="score-circle">
+                                <span>92%</span>
+                                <div class="progress-ring"></div>
+                            </div>
+                            <span>Match</span>
+                        </div>
+                    </div>
+                    <div class="job-details">
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">React</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">5+ years</span>
+                        </div>
+                        <p class="description">Join our team to build scalable cloud solutions...</p>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Remote</span>
+                            <span><i class="fas fa-dollar-sign"></i> $120K - $150K</span>
+                            <span><i class="fas fa-clock"></i> Full-time</span>
+                        </div>
+                    </div>
+                    <div class="job-actions">
+                        <button class="btn primary">Quick Apply</button>
+                        <button class="btn secondary"><i class="fas fa-bookmark"></i> Save</button>
+                    </div>
+                </div>
+
+                <!-- Company Challenge Card -->
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <h3>Spotify Data Challenge</h3>
+                        <span class="challenge-tag">Featured</span>
+                    </div>
+                    <div class="challenge-content">
+                        <p>Optimize our recommendation engine using real user data...</p>
+                        <div class="challenge-meta">
+                            <span><i class="fas fa-code"></i> Python</span>
+                            <span><i class="fas fa-trophy"></i> $5K Prize</span>
+                            <span><i class="fas fa-users"></i> 128 Participants</span>
+                        </div>
+                    </div>
+                    <div class="challenge-actions">
+                        <button class="btn primary">Start Challenge</button>
+                        <button class="btn secondary">View Leaderboard</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Panel - Tools -->
+        <aside class="tools-panel">
+            <div class="panel-section">
+                <h3>Resume Builder</h3>
+                <div class="resume-preview">
+                    <div class="resume-header">
+                        <img src="https://via.placeholder.com/100" alt="Profile" class="profile-img">
+                        <div class="resume-info">
+                            <h4>Your Name</h4>
+                            <p>Software Developer</p>
+                        </div>
+                    </div>
+                    <div class="resume-content">
+                        <div class="section">
+                            <h5>Skills</h5>
+                            <div class="skill-bars">
+                                <div class="skill-bar">
+                                    <span>Python</span>
+                                    <div class="progress">
+                                        <div class="progress-fill" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <span>React</span>
+                                    <div class="progress">
+                                        <div class="progress-fill" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn primary">Edit Resume</button>
+            </div>
+
+            <div class="panel-section">
+                <h3>Interview Simulator</h3>
+                <div class="interview-options">
+                    <button class="interview-btn">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Technical Interview</span>
+                    </button>
+                    <button class="interview-btn">
+                        <i class="fas fa-comments"></i>
+                        <span>HR Interview</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="panel-section">
+                <h3>Career Path Predictor</h3>
+                <div class="career-path">
+                    <div class="path-item current">
+                        <span class="role">Software Developer</span>
+                        <span class="salary">$90K</span>
+                    </div>
+                    <div class="path-item next">
+                        <span class="role">Senior Developer</span>
+                        <span class="salary">$120K</span>
+                    </div>
+                    <div class="path-item future">
+                        <span class="role">Tech Lead</span>
+                        <span class="salary">$150K</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>EduVenture Nexus is a transformative platform combining AI, VR/AR, and global community for education and innovation.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EduVenture Nexus. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AI Chat Widget -->
+    <div class="ai-chat-widget">
+        <button class="chat-toggle">
+            <i class="fas fa-robot"></i>
+            <span>AI Assistant</span>
+        </button>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h4>AI Assistant</h4>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <div class="message ai">
+                    <p>Hello! How can I help you with your career journey today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

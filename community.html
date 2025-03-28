@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - EduVenture Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="community.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>EduVenture Nexus</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="startups.html">Startups</a></li>
+            <li><a href="your-plan.html">Your Plan</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="ai-modules.html">AI Modules</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="feed.html">Feed</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn secondary">Login</a>
+            <a href="signup.html" class="btn primary">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="community-container">
+        <!-- Tab Navigation -->
+        <div class="tab-navigation">
+            <button class="tab-btn active" data-tab="videos">
+                <i class="fas fa-video"></i>
+                <span>Videos</span>
+            </button>
+            <button class="tab-btn" data-tab="posts">
+                <i class="fas fa-newspaper"></i>
+                <span>Posts</span>
+            </button>
+            <button class="tab-btn" data-tab="labs">
+                <i class="fas fa-flask"></i>
+                <span>Problem Solving</span>
+            </button>
+        </div>
+
+        <!-- Content Panels -->
+        <div class="content-panels">
+            <!-- Videos Panel -->
+            <div class="panel active" id="videos-panel">
+                <div class="panel-header">
+                    <h2>AI-Curated Learning Videos</h2>
+                    <div class="ai-filter">
+                        <i class="fas fa-robot"></i>
+                        <span>AI-Powered Recommendations</span>
+                    </div>
+                </div>
+
+                <div class="video-grid">
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://via.placeholder.com/300x200" alt="Video thumbnail">
+                            <div class="duration">2:15</div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Python Optimization Hacks</h3>
+                            <p>Learn advanced techniques for optimizing your Python code</p>
+                            <div class="video-meta">
+                                <span><i class="fas fa-eye"></i> 1.2K views</span>
+                                <span><i class="fas fa-clock"></i> 2 days ago</span>
+                            </div>
+                            <div class="interactive-elements">
+                                <button class="timestamp-btn">Jump to 2:15</button>
+                                <button class="quiz-btn">Take Quiz</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- More video cards... -->
+                </div>
+            </div>
+
+            <!-- Posts Panel -->
+            <div class="panel" id="posts-panel">
+                <div class="panel-header">
+                    <h2>Professional Feed</h2>
+                    <div class="post-filters">
+                        <button class="filter-btn active">All</button>
+                        <button class="filter-btn">Articles</button>
+                        <button class="filter-btn">Code Snippets</button>
+                        <button class="filter-btn">Events</button>
+                    </div>
+                </div>
+
+                <div class="posts-feed">
+                    <div class="post-card">
+                        <div class="post-header">
+                            <img src="https://via.placeholder.com/40" alt="User avatar" class="avatar">
+                            <div class="post-meta">
+                                <h4>Sarah Chen</h4>
+                                <span>Senior ML Engineer at Google</span>
+                            </div>
+                            <div class="post-actions">
+                                <button><i class="fas fa-ellipsis-h"></i></button>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3>Understanding Neural Networks</h3>
+                            <p>A deep dive into the fundamentals of neural networks and their applications...</p>
+                            <div class="code-snippet">
+                                <pre><code>def neural_network(input_data):
+    # Neural network implementation
+    hidden_layer = relu(dot(input_data, weights) + bias)
+    output = sigmoid(dot(hidden_layer, output_weights))
+    return output</code></pre>
+                            </div>
+                        </div>
+                        <div class="post-footer">
+                            <div class="engagement">
+                                <button><i class="fas fa-thumbs-up"></i> 234</button>
+                                <button><i class="fas fa-comment"></i> 45</button>
+                                <button><i class="fas fa-share"></i> Share</button>
+                            </div>
+                            <div class="achievement-badge">
+                                <i class="fas fa-award"></i>
+                                <span>AI Wizard</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- More post cards... -->
+                </div>
+            </div>
+
+            <!-- Problem Solving Panel -->
+            <div class="panel" id="labs-panel">
+                <div class="panel-header">
+                    <h2>Problem Solving Labs</h2>
+                    <div class="labs-filters">
+                        <button class="filter-btn active">All Problems</button>
+                        <button class="filter-btn">Bounties</button>
+                        <button class="filter-btn">Company Challenges</button>
+                    </div>
+                </div>
+
+                <div class="labs-grid">
+                    <div class="lab-card">
+                        <div class="lab-header">
+                            <div class="bounty-tag">
+                                <i class="fas fa-coins"></i>
+                                <span>500 Tokens</span>
+                            </div>
+                            <div class="urgency">Urgent</div>
+                        </div>
+                        <div class="lab-content">
+                            <h3>Optimize Database Query</h3>
+                            <p>Help us optimize this complex database query for better performance...</p>
+                            <div class="code-preview">
+                                <pre><code>SELECT * FROM users 
+JOIN orders ON users.id = orders.user_id 
+WHERE orders.status = 'pending' 
+AND orders.created_at > NOW() - INTERVAL '7 days';</code></pre>
+                            </div>
+                            <div class="visual-debugger">
+                                <button class="btn secondary">
+                                    <i class="fas fa-chart-line"></i>
+                                    View Execution Flow
+                                </button>
+                            </div>
+                        </div>
+                        <div class="lab-footer">
+                            <div class="expert-match">
+                                <i class="fas fa-user-tie"></i>
+                                <span>3 experts available</span>
+                            </div>
+                            <button class="btn primary">Solve Problem</button>
+                        </div>
+                    </div>
+                    <!-- More lab cards... -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <aside class="community-sidebar">
+            <div class="sidebar-section">
+                <h3>Your Network</h3>
+                <div class="network-stats">
+                    <div class="stat">
+                        <span class="value">1,234</span>
+                        <span class="label">Connections</span>
+                    </div>
+                    <div class="stat">
+                        <span class="value">45</span>
+                        <span class="label">Problems Solved</span>
+                    </div>
+                    <div class="stat">
+                        <span class="value">12</span>
+                        <span class="label">Badges Earned</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Trending Topics</h3>
+                <div class="trending-topics">
+                    <div class="topic">
+                        <span class="tag">#AI</span>
+                        <span class="count">2.3K posts</span>
+                    </div>
+                    <div class="topic">
+                        <span class="tag">#WebDev</span>
+                        <span class="count">1.8K posts</span>
+                    </div>
+                    <div class="topic">
+                        <span class="tag">#DataScience</span>
+                        <span class="count">1.5K posts</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Collaboration Hub</h3>
+                <div class="collab-opportunities">
+                    <div class="opportunity">
+                        <h4>Looking for Frontend Dev</h4>
+                        <p>3 candidates online now</p>
+                        <button class="btn secondary">View Matches</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>EduVenture Nexus is a transformative platform combining AI, VR/AR, and global community for education and innovation.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="startups.html">Startups</a></li>
+                    <li><a href="your-plan.html">Your Plan</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EduVenture Nexus. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AI Chat Widget -->
+    <div class="ai-chat-widget">
+        <button class="chat-toggle">
+            <i class="fas fa-robot"></i>
+            <span>AI Assistant</span>
+        </button>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h4>AI Assistant</h4>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <div class="message ai">
+                    <p>Hello! How can I help you with your community engagement today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

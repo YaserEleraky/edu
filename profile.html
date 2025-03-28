@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - EduVenture Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="feed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Modern Navigation -->
+    <nav class="feed-nav">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>EduVenture Nexus</h1>
+                </a>
+            </div>
+            <div class="nav-search">
+                <div class="search-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Explore learning resources...">
+                    <div class="ai-suggestions">
+                        <div class="suggestion-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Learning Paths</span>
+                        </div>
+                        <div class="suggestion-item">
+                            <i class="fas fa-code"></i>
+                            <span>Code Projects</span>
+                        </div>
+                        <div class="suggestion-item">
+                            <i class="fas fa-book"></i>
+                            <span>Courses</span>
+                        </div>
+                        <div class="suggestion-item">
+                            <i class="fas fa-users"></i>
+                            <span>Community</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-actions">
+                <button class="action-btn">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Create</span>
+                </button>
+                <button class="action-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+                <button class="action-btn">
+                    <i class="fas fa-user-circle"></i>
+                    <ul class="nav-links">
+                        <li><a href="feed.html">feeds</a></li>
+                    </ul>
+
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Header -->
+    <header class="profile-header">
+        <div class="cover-image">
+            <div class="tech-stack-cloud"></div>
+        </div>
+        <div class="profile-info">
+            <div class="profile-avatar">
+                <div class="avatar-3d">
+                    <img src="assets/images/profile-avatar.png" alt="Profile">
+                    <div class="language-badges">
+                        <span class="lang-badge">Python</span>
+                        <span class="lang-badge">JavaScript</span>
+                        <span class="lang-badge">React</span>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-details">
+                <h1>Sarah Chen</h1>
+                <div class="ai-title">
+                    <span class="title-badge">React Specialist</span>
+                    <i class="fas fa-arrow-right"></i>
+                    <span class="title-badge">AI Engineer</span>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat">
+                        <span class="value">2.3k</span>
+                        <span class="label">Followers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="value">156</span>
+                        <span class="label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="value">89</span>
+                        <span class="label">Articles</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="profile-content">
+        <!-- Left Sidebar -->
+        <aside class="profile-sidebar">
+            <div class="sidebar-section">
+                <h3>About Me</h3>
+                <div class="about-me">
+                    <p>AI Engineer and Tech Enthusiast. Passionate about building innovative solutions and sharing knowledge with the community.</p>
+                    <div class="location-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>San Francisco, CA</span>
+                    </div>
+                    <div class="join-date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Joined January 2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Recent Activity</h3>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <i class="fas fa-newspaper"></i>
+                        <div class="activity-info">
+                            <p>Published new article</p>
+                            <span>2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <i class="fas fa-comment"></i>
+                        <div class="activity-info">
+                            <p>Commented on "AI Trends 2024"</p>
+                            <span>5 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <i class="fas fa-share-alt"></i>
+                        <div class="activity-info">
+                            <p>Shared a post</p>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Trending Topics</h3>
+                <div class="topics-list">
+                    <a href="#" class="topic-tag">#AI</a>
+                    <a href="#" class="topic-tag">#MachineLearning</a>
+                    <a href="#" class="topic-tag">#TechNews</a>
+                    <a href="#" class="topic-tag">#Innovation</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="profile-main">
+            <div class="content-tabs">
+                <button class="tab-btn active">Posts</button>
+                <button class="tab-btn">Articles</button>
+                <button class="tab-btn">Comments</button>
+                <button class="tab-btn">Saved</button>
+                <button class="tab-btn">Following</button>
+            </div>
+
+            <!-- Posts Section -->
+            <div class="content-section active">
+                <div class="create-post-card">
+                    <div class="post-input-wrapper">
+                        <img src="https://via.placeholder.com/40" alt="User" class="user-avatar">
+                        <input type="text" placeholder="What's on your mind?">
+                    </div>
+                    <div class="post-actions">
+                        <button class="post-action-btn">
+                            <i class="fas fa-image"></i>
+                            <span>Photo</span>
+                        </button>
+                        <button class="post-action-btn">
+                            <i class="fas fa-video"></i>
+                            <span>Video</span>
+                        </button>
+                        <button class="post-action-btn">
+                            <i class="fas fa-link"></i>
+                            <span>Link</span>
+                        </button>
+                        <button class="post-submit-btn">Post</button>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="author-info">
+                            <img src="assets/images/avatar.png" alt="Author">
+                            <div class="author-details">
+                                <h4>Sarah Chen</h4>
+                                <span>2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-icon"><i class="far fa-bookmark"></i></button>
+                            <button class="action-icon"><i class="far fa-share-square"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Exciting News: AI Breakthrough in Healthcare</h3>
+                        <p>Just published my latest research on AI applications in healthcare. The results are promising and could revolutionize patient care. Check out the full article!</p>
+                        <div class="post-image">
+                            <img src="assets/images/post-image.jpg" alt="AI Healthcare">
+                        </div>
+                        <div class="post-meta">
+                            <span><i class="far fa-eye"></i> 2.3k views</span>
+                            <span><i class="far fa-comment"></i> 89 comments</span>
+                            <span><i class="far fa-share-square"></i> 45 shares</span>
+                        </div>
+                    </div>
+                    <div class="post-footer">
+                        <div class="reaction-wheel">
+                            <button class="reaction-btn"><i class="far fa-thumbs-up"></i> Like</button>
+                            <button class="reaction-btn"><i class="far fa-comment"></i> Comment</button>
+                            <button class="reaction-btn"><i class="far fa-share-square"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="author-info">
+                            <img src="assets/images/avatar.png" alt="Author">
+                            <div class="author-details">
+                                <h4>Sarah Chen</h4>
+                                <span>1 day ago</span>
+                            </div>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-icon"><i class="far fa-bookmark"></i></button>
+                            <button class="action-icon"><i class="far fa-share-square"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Just attended an amazing AI conference in San Francisco! Met some incredible people and learned about the latest developments in the field. Can't wait to share more insights with you all!</p>
+                        <div class="post-gallery">
+                            <img src="assets/images/conference.jpg" alt="Conference">
+                            <img src="assets/images/networking.jpg" alt="Networking">
+                        </div>
+                        <div class="post-meta">
+                            <span><i class="far fa-eye"></i> 1.5k views</span>
+                            <span><i class="far fa-comment"></i> 56 comments</span>
+                            <span><i class="far fa-share-square"></i> 32 shares</span>
+                        </div>
+                    </div>
+                    <div class="post-footer">
+                        <div class="reaction-wheel">
+                            <button class="reaction-btn"><i class="far fa-thumbs-up"></i> Like</button>
+                            <button class="reaction-btn"><i class="far fa-comment"></i> Comment</button>
+                            <button class="reaction-btn"><i class="far fa-share-square"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <aside class="profile-sidebar">
+            <div class="sidebar-section">
+                <h3>Following</h3>
+                <div class="following-list">
+                    <div class="following-item">
+                        <img src="assets/images/following-1.png" alt="Following">
+                        <div class="following-info">
+                            <h4>Dr. James Wilson</h4>
+                            <p>AI Research Lead</p>
+                        </div>
+                        <button class="following-btn">Following</button>
+                    </div>
+                    <div class="following-item">
+                        <img src="assets/images/following-2.png" alt="Following">
+                        <div class="following-info">
+                            <h4>Alex Rivera</h4>
+                            <p>Tech Writer</p>
+                        </div>
+                        <button class="following-btn">Following</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Trending Hashtags</h3>
+                <div class="hashtags-list">
+                    <a href="#" class="hashtag">#AI</a>
+                    <a href="#" class="hashtag">#TechNews</a>
+                    <a href="#" class="hashtag">#Innovation</a>
+                    <a href="#" class="hashtag">#FutureTech</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- AI Chat Widget -->
+    <div class="ai-chat-widget">
+        <button class="chat-toggle">
+            <i class="fas fa-robot"></i>
+            <span>AI Assistant</span>
+        </button>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h4>AI Assistant</h4>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <div class="message ai">
+                    <p>Hello! I can help you optimize your profile and learning journey. What would you like to know?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

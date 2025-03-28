@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - EduVenture Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>EduVenture Nexus</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="startups.html">Startups</a></li>
+            <li><a href="your-plan.html">Your Plan</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="ai-modules.html">AI Modules</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="feed.html">Feed</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn secondary">Login</a>
+            <a href="signup.html" class="btn primary">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="portfolio-main">
+        <!-- Hero Section -->
+        <section class="portfolio-hero">
+            <div class="hero-content">
+                <h1>Your AI-Powered Achievement Hub</h1>
+                <p>Track your progress, showcase your skills, and build your professional story</p>
+                <div class="hero-buttons">
+                    <a href="#cv-builder" class="btn primary">Build Your CV</a>
+                    <a href="#success-stories" class="btn secondary">View Success Stories</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories Section -->
+        <section class="success-stories" id="success-stories">
+            <h2>Success Stories</h2>
+            <div class="story-filters">
+                <button class="filter-btn active" data-filter="all">All Stories</button>
+                <button class="filter-btn" data-filter="career-transition">Career Transitions</button>
+                <button class="filter-btn" data-filter="startup-success">Startup Success</button>
+                <button class="filter-btn" data-filter="skill-development">Skill Development</button>
+            </div>
+            <div class="stories-grid">
+                <div class="story-card" data-category="career-transition">
+                    <div class="story-media">
+                        <div class="before-after-slider">
+                            <div class="before">
+                                <img src="https://via.placeholder.com/300x200" alt="Before">
+                            </div>
+                            <div class="after">
+                                <img src="https://via.placeholder.com/300x200" alt="After">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <h3>From Teacher to Data Scientist</h3>
+                        <p class="story-author">Sarah Johnson</p>
+                        <p class="story-excerpt">Transitioned from education to tech in 6 months using our AI-powered learning path.</p>
+                        <div class="story-stats">
+                            <span><i class="fas fa-clock"></i> 6 months</span>
+                            <span><i class="fas fa-graduation-cap"></i> 3 certifications</span>
+                            <span><i class="fas fa-briefcase"></i> New role</span>
+                        </div>
+                        <button class="btn secondary">Read Full Story</button>
+                    </div>
+                </div>
+                <!-- More story cards... -->
+            </div>
+        </section>
+
+        <!-- Achievement Tracking -->
+        <section class="achievement-tracking">
+            <h2>Your Progress</h2>
+            <div class="progress-grid">
+                <div class="progress-card">
+                    <div class="progress-ring">
+                        <svg viewBox="0 0 36 36">
+                            <path d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        </svg>
+                        <div class="progress-text">75%</div>
+                    </div>
+                    <h3>Overall Progress</h3>
+                    <p>Based on your learning history</p>
+                    <div class="predicted-completion">
+                        <i class="fas fa-calendar"></i>
+                        <span>Predicted completion: Nov 15, 2024</span>
+                    </div>
+                </div>
+                <div class="progress-card">
+                    <div class="achievement-badges">
+                        <h3>Your Badges</h3>
+                        <div class="badge-grid">
+                            <div class="badge">
+                                <i class="fas fa-code"></i>
+                                <span>Web Development</span>
+                            </div>
+                            <div class="badge">
+                                <i class="fas fa-brain"></i>
+                                <span>AI Fundamentals</span>
+                            </div>
+                            <div class="badge">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Data Analysis</span>
+                            </div>
+                        </div>
+                        <button class="btn secondary">Share on LinkedIn</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV Builder Section -->
+        <section class="cv-builder" id="cv-builder">
+            <h2>AI-Powered CV Builder</h2>
+            <div class="cv-grid">
+                <div class="cv-form">
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" placeholder="Enter your phone number">
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <h3>Professional Summary</h3>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about yourself"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <h3>Skills</h3>
+                        <div class="skills-input">
+                            <input type="text" placeholder="Add a skill">
+                            <button class="btn secondary">Add</button>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cv-preview">
+                    <div class="preview-header">
+                        <h3>CV Preview</h3>
+                        <div class="preview-actions">
+                            <button class="btn secondary">Change Template</button>
+                            <button class="btn primary">Download PDF</button>
+                        </div>
+                    </div>
+                    <div class="preview-content">
+                        <!-- CV preview content will be dynamically populated -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Self Simulator -->
+        <section class="future-simulator">
+            <h2>Your Future Self</h2>
+            <div class="simulator-grid">
+                <div class="simulator-input">
+                    <h3>Upload Your Photo</h3>
+                    <div class="upload-area">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Drag and drop your photo here</p>
+                        <input type="file" accept="image/*" hidden>
+                    </div>
+                    <div class="career-goals">
+                        <h3>Career Goals</h3>
+                        <select>
+                            <option>Select your target role</option>
+                            <option>Senior Developer</option>
+                            <option>Product Manager</option>
+                            <option>Data Scientist</option>
+                            <option>Startup Founder</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="simulator-output">
+                    <div class="timeline">
+                        <h3>Career Progression Timeline</h3>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <div class="year">2024</div>
+                                <div class="content">
+                                    <h4>Current Role</h4>
+                                    <p>Junior Developer</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="year">2025</div>
+                                <div class="content">
+                                    <h4>Mid-Level Developer</h4>
+                                    <p>Leading small teams</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="year">2026</div>
+                                <div class="content">
+                                    <h4>Senior Developer</h4>
+                                    <p>Architecture decisions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vulnerability Scanner -->
+        <section class="vulnerability-scanner">
+            <h2>Portfolio Health Check</h2>
+            <div class="scanner-grid">
+                <div class="scanner-card">
+                    <div class="scanner-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Strength Analysis</h3>
+                    <div class="strength-bars">
+                        <div class="strength-item">
+                            <span>Technical Skills</span>
+                            <div class="strength-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="strength-item">
+                            <span>Leadership</span>
+                            <div class="strength-bar">
+                                <div class="progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="strength-item">
+                            <span>Project Diversity</span>
+                            <div class="strength-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scanner-card">
+                    <div class="scanner-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Areas for Improvement</h3>
+                    <ul class="improvement-list">
+                        <li>Add more team project experience</li>
+                        <li>Include case studies with metrics</li>
+                        <li>Showcase leadership initiatives</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>EduVenture Nexus is a transformative platform combining AI, VR/AR, and global community for education and innovation.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#community">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EduVenture Nexus. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AI Chat Widget -->
+    <div class="ai-chat-widget">
+        <button class="chat-toggle">
+            <i class="fas fa-robot"></i>
+            <span>AI Assistant</span>
+        </button>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h4>AI Assistant</h4>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <div class="message ai">
+                    <p>Hello! How can I help you with your portfolio today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

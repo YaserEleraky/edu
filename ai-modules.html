@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Modules - EduVenture Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ai-modules.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>EduVenture Nexus</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="startups.html">Startups</a></li>
+            <li><a href="your-plan.html">Your Plan</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="ai-modules.html">AI Modules</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="feed.html">Feed</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn secondary">Login</a>
+            <a href="signup.html" class="btn primary">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="ai-modules-container">
+        <!-- Left Sidebar -->
+        <aside class="modules-sidebar">
+            <div class="sidebar-header">
+                <h2>AI Modules</h2>
+                <div class="ai-status">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Assistant Active</span>
+                </div>
+            </div>
+
+            <nav class="modules-nav">
+                <a href="#generate" class="nav-item active">
+                    <i class="fas fa-magic"></i>
+                    <span>Generate</span>
+                </a>
+                <a href="#problems" class="nav-item">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <span>Problems</span>
+                </a>
+                <a href="#examples" class="nav-item">
+                    <i class="fas fa-code"></i>
+                    <span>Examples</span>
+                </a>
+                <a href="#search" class="nav-item">
+                    <i class="fas fa-search"></i>
+                    <span>Search</span>
+                </a>
+                <a href="#think" class="nav-item">
+                    <i class="fas fa-brain"></i>
+                    <span>Think With Me</span>
+                </a>
+                <a href="#diagrams" class="nav-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Code Diagrams</span>
+                </a>
+                <a href="#projects" class="nav-item">
+                    <i class="fas fa-rocket"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#transparency" class="nav-item">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Transparency</span>
+                </a>
+                <a href="#sandbox" class="nav-item">
+                    <i class="fas fa-balance-scale"></i>
+                    <span>Ethical AI</span>
+                </a>
+                <a href="#playground" class="nav-item">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <span>Model Playground</span>
+                </a>
+            </nav>
+
+            <div class="quick-stats">
+                <div class="stat-card">
+                    <i class="fas fa-code-branch"></i>
+                    <div class="stat-info">
+                        <span class="label">Generated Content</span>
+                        <span class="value">1.2K</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-check-circle"></i>
+                    <div class="stat-info">
+                        <span class="label">Problems Solved</span>
+                        <span class="value">856</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <div class="stat-info">
+                        <span class="label">Diagrams Created</span>
+                        <span class="value">234</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Panel -->
+        <main class="modules-main">
+            <!-- Generate Panel -->
+            <div class="panel active" id="generate-panel">
+                <div class="panel-header">
+                    <h2>Content Generation</h2>
+                    <div class="ai-filter">
+                        <i class="fas fa-robot"></i>
+                        <span>Powered by GPT-4 + RAG</span>
+                    </div>
+                </div>
+
+                <div class="generation-form">
+                    <div class="form-group">
+                        <label>Topic</label>
+                        <input type="text" placeholder="Enter topic (e.g., Python Decorators)">
+                    </div>
+                    <div class="form-group">
+                        <label>Skill Level</label>
+                        <select>
+                            <option>Beginner</option>
+                            <option>Intermediate</option>
+                            <option>Advanced</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Output Type</label>
+                        <select>
+                            <option>Course Module</option>
+                            <option>Cheat Sheet</option>
+                            <option>Practice Problems</option>
+                        </select>
+                    </div>
+                    <button class="btn primary">Generate Content</button>
+                </div>
+
+                <div class="generation-preview">
+                    <h3>Preview</h3>
+                    <div class="preview-content">
+                        <div class="content-section">
+                            <h4>Python Decorators</h4>
+                            <p>Decorators are like gift wrappers for functions...</p>
+                            <div class="code-example">
+                                <pre><code>def timer(func):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        end = time.time()
+        print(f"Function took {end - start} seconds")
+        return result
+    return wrapper</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Problem Generator Panel -->
+            <div class="panel" id="problems-panel">
+                <div class="panel-header">
+                    <h2>Problem Generator</h2>
+                    <div class="difficulty-selector">
+                        <button class="difficulty-btn active">Easy</button>
+                        <button class="difficulty-btn">Medium</button>
+                        <button class="difficulty-btn">Hard</button>
+                    </div>
+                </div>
+
+                <div class="problem-generator">
+                    <div class="problem-card">
+                        <div class="problem-header">
+                            <span class="difficulty-tag">Medium</span>
+                            <span class="topic-tag">Data Structures</span>
+                        </div>
+                        <div class="problem-content">
+                            <h3>Reverse Linked List</h3>
+                            <p>Implement a function to reverse a singly linked list in O(1) space.</p>
+                            <div class="code-template">
+                                <pre><code>class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+def reverseList(head):
+    # Your code here
+    pass</code></pre>
+                            </div>
+                            <div class="test-cases">
+                                <h4>Test Cases</h4>
+                                <ul>
+                                    <li>Input: 1->2->3->4->5</li>
+                                    <li>Output: 5->4->3->2->1</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="problem-actions">
+                            <button class="btn secondary">Show Solution</button>
+                            <button class="btn primary">Try Another</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example Generator Panel -->
+            <div class="panel" id="examples-panel">
+                <div class="panel-header">
+                    <h2>Example Generator</h2>
+                    <div class="example-filters">
+                        <select>
+                            <option>Python</option>
+                            <option>JavaScript</option>
+                            <option>Java</option>
+                        </select>
+                        <select>
+                            <option>Recursion</option>
+                            <option>Decorators</option>
+                            <option>Async/Await</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="example-generator">
+                    <div class="example-card">
+                        <div class="example-header">
+                            <h3>Recursion Examples</h3>
+                            <span class="language-tag">Python</span>
+                        </div>
+                        <div class="example-content">
+                            <div class="example-item">
+                                <h4>1. Factorial Calculation</h4>
+                                <div class="code-example">
+                                    <pre><code>def factorial(n):
+    if n <= 1:
+        return 1
+    return n * factorial(n - 1)</code></pre>
+                                </div>
+                                <div class="visualization">
+                                    <div class="stack-visual">
+                                        <div class="stack-item">factorial(5)</div>
+                                        <div class="stack-item">factorial(4)</div>
+                                        <div class="stack-item">factorial(3)</div>
+                                        <div class="stack-item">factorial(2)</div>
+                                        <div class="stack-item">factorial(1)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Panel -->
+            <div class="panel" id="search-panel">
+                <div class="panel-header">
+                    <h2>Semantic Search</h2>
+                    <div class="search-filters">
+                        <button class="filter-btn active">All</button>
+                        <button class="filter-btn">Code</button>
+                        <button class="filter-btn">Documentation</button>
+                        <button class="filter-btn">Examples</button>
+                    </div>
+                </div>
+
+                <div class="search-interface">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search for code, concepts, or solutions...">
+                        <button class="btn primary"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="search-results">
+                        <div class="result-card">
+                            <div class="result-header">
+                                <h4>React Rendering Optimization</h4>
+                                <span class="relevance">98% Match</span>
+                            </div>
+                            <p>Learn how to optimize React component rendering for better performance...</p>
+                            <div class="result-meta">
+                                <span><i class="fas fa-code"></i> Code Example</span>
+                                <span><i class="fas fa-book"></i> Documentation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Think With Me Panel -->
+            <div class="panel" id="think-panel">
+                <div class="panel-header">
+                    <h2>Think With Me</h2>
+                    <div class="confidence-meter">
+                        <span>AI Confidence: 92%</span>
+                    </div>
+                </div>
+
+                <div class="think-interface">
+                    <div class="chat-history">
+                        <div class="message user">
+                            <p>Why is my SQL query slow?</p>
+                        </div>
+                        <div class="message ai">
+                            <p>Let's diagnose together:</p>
+                            <ol>
+                                <li>First, let's check the EXPLAIN output...</li>
+                                <li>Notice this JOIN operation...</li>
+                                <li>Consider adding an index...</li>
+                            </ol>
+                            <button class="btn secondary">Show Me How</button>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" placeholder="Ask your question...">
+                        <button class="btn primary"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Code Diagrams Panel -->
+            <div class="panel" id="diagrams-panel">
+                <div class="panel-header">
+                    <h2>Code Diagram Generator</h2>
+                    <div class="diagram-types">
+                        <button class="type-btn active">Flowchart</button>
+                        <button class="type-btn">Sequence</button>
+                        <button class="type-btn">Class</button>
+                    </div>
+                </div>
+
+                <div class="diagram-generator">
+                    <div class="code-input">
+                        <h3>Input Code</h3>
+                        <textarea placeholder="Paste your code here..."></textarea>
+                    </div>
+                    <div class="diagram-output">
+                        <h3>Generated Diagram</h3>
+                        <div class="diagram-preview">
+                            <div class="mermaid">
+                                graph TD
+                                    A[Start] --> B{Check}
+                                    B -->|Yes| C[Action]
+                                    B -->|No| D[Alternative]
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Generator Panel -->
+            <div class="panel" id="projects-panel">
+                <div class="panel-header">
+                    <h2>Project Generator</h2>
+                    <div class="project-filters">
+                        <select>
+                            <option>Web Development</option>
+                            <option>Mobile App</option>
+                            <option>Data Science</option>
+                        </select>
+                        <select>
+                            <option>Beginner</option>
+                            <option>Intermediate</option>
+                            <option>Advanced</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="project-generator">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>SaaS Analytics Dashboard</h3>
+                            <span class="complexity">Advanced</span>
+                        </div>
+                        <div class="project-timeline">
+                            <div class="timeline-item">
+                                <span class="phase">Phase 1</span>
+                                <h4>Market Research</h4>
+                                <p>2 weeks</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="phase">Phase 2</span>
+                                <h4>MVP Development</h4>
+                                <p>4 weeks</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="phase">Phase 3</span>
+                                <h4>Testing & Launch</h4>
+                                <p>2 weeks</p>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <h4>Recommended Tech Stack</h4>
+                            <div class="stack-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>PostgreSQL</span>
+                                <span>D3.js</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn secondary">View Details</button>
+                            <button class="btn primary">Start Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Transparency Lab Panel -->
+            <div class="panel" id="transparency-panel">
+                <div class="panel-header">
+                    <h2>AI Transparency Lab</h2>
+                    <div class="ai-filter">
+                        <i class="fas fa-robot"></i>
+                        <span>Model Explainability Interface</span>
+                    </div>
+                </div>
+
+                <div class="transparency-lab">
+                    <div class="model-visualization">
+                        <div class="model-flow">
+                            <div class="flow-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Your Data</h4>
+                                    <div class="data-preview">
+                                        <div class="data-item">
+                                            <span class="label">Learning History</span>
+                                            <div class="progress-bar">
+                                                <div class="progress" style="width: 75%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="data-item">
+                                            <span class="label">Skill Assessment</span>
+                                            <div class="progress-bar">
+                                                <div class="progress" style="width: 60%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-cube"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>AI Model</h4>
+                                    <div class="model-details">
+                                        <div class="model-metric">
+                                            <span class="metric-label">Confidence</span>
+                                            <span class="metric-value">92%</span>
+                                        </div>
+                                        <div class="model-metric">
+                                            <span class="metric-label">Bias Score</span>
+                                            <span class="metric-value">0.03</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Recommendations</h4>
+                                    <div class="recommendation-list">
+                                        <div class="recommendation-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Complete Python Advanced Course</span>
+                                        </div>
+                                        <div class="recommendation-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Join AI Study Group</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="explainability-interface">
+                        <h3>Why This Recommendation?</h3>
+                        <div class="explanation-content">
+                            <div class="explanation-section">
+                                <h4>Data Points Considered</h4>
+                                <ul>
+                                    <li>Your Python proficiency (85%)</li>
+                                    <li>Learning pace (2.5x average)</li>
+                                    <li>Career goals (AI/ML)</li>
+                                </ul>
+                            </div>
+                            <div class="explanation-section">
+                                <h4>Model Confidence</h4>
+                                <div class="confidence-visual">
+                                    <div class="confidence-bar">
+                                        <div class="confidence-level" style="width: 92%"></div>
+                                    </div>
+                                    <span class="confidence-value">92%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ethical AI Sandbox Panel -->
+            <div class="panel" id="sandbox-panel">
+                <div class="panel-header">
+                    <h2>Ethical AI Sandbox</h2>
+                    <div class="ai-filter">
+                        <i class="fas fa-balance-scale"></i>
+                        <span>Bias Mitigation & Fairness</span>
+                    </div>
+                </div>
+
+                <div class="sandbox-interface">
+                    <div class="bias-mitigation">
+                        <h3>Bias Detection & Mitigation</h3>
+                        <div class="bias-metrics">
+                            <div class="metric-card">
+                                <h4>Gender Bias</h4>
+                                <div class="metric-value">0.02</div>
+                                <div class="metric-bar">
+                                    <div class="bar-fill" style="width: 2%"></div>
+                                </div>
+                                <span class="metric-label">Low</span>
+                            </div>
+                            <div class="metric-card">
+                                <h4>Cultural Bias</h4>
+                                <div class="metric-value">0.05</div>
+                                <div class="metric-bar">
+                                    <div class="bar-fill" style="width: 5%"></div>
+                                </div>
+                                <span class="metric-label">Medium</span>
+                            </div>
+                            <div class="metric-card">
+                                <h4>Educational Bias</h4>
+                                <div class="metric-value">0.01</div>
+                                <div class="metric-bar">
+                                    <div class="bar-fill" style="width: 1%"></div>
+                                </div>
+                                <span class="metric-label">Very Low</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fairness-experiments">
+                        <h3>Fairness Experiments</h3>
+                        <div class="experiment-grid">
+                            <div class="experiment-card">
+                                <h4>Equal Opportunity</h4>
+                                <div class="experiment-controls">
+                                    <label>Adjust Threshold</label>
+                                    <input type="range" min="0" max="100" value="50">
+                                </div>
+                                <div class="experiment-results">
+                                    <div class="result-item">
+                                        <span>Before</span>
+                                        <div class="result-bar">
+                                            <div class="bar-fill" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="result-item">
+                                        <span>After</span>
+                                        <div class="result-bar">
+                                            <div class="bar-fill" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Model Playground Panel -->
+            <div class="panel" id="playground-panel">
+                <div class="panel-header">
+                    <h2>Model Playground</h2>
+                    <div class="ai-filter">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <span>Create Custom AI Tutors</span>
+                    </div>
+                </div>
+
+                <div class="playground-interface">
+                    <div class="model-builder">
+                        <div class="component-palette">
+                            <h3>AI Components</h3>
+                            <div class="component-list">
+                                <div class="component-item" draggable="true">
+                                    <i class="fas fa-brain"></i>
+                                    <span>Neural Network</span>
+                                </div>
+                                <div class="component-item" draggable="true">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Learning Rate</span>
+                                </div>
+                                <div class="component-item" draggable="true">
+                                    <i class="fas fa-layer-group"></i>
+                                    <span>Layer Config</span>
+                                </div>
+                                <div class="component-item" draggable="true">
+                                    <i class="fas fa-cogs"></i>
+                                    <span>Optimizer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="model-canvas">
+                            <h3>Build Your Model</h3>
+                            <div class="canvas-area">
+                                <div class="drop-zone">
+                                    <p>Drag components here to build your AI tutor</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="model-config">
+                            <h3>Configuration</h3>
+                            <div class="config-options">
+                                <div class="config-group">
+                                    <label>Model Type</label>
+                                    <select>
+                                        <option>Transformer</option>
+                                        <option>CNN</option>
+                                        <option>RNN</option>
+                                    </select>
+                                </div>
+                                <div class="config-group">
+                                    <label>Training Data</label>
+                                    <select>
+                                        <option>Python Programming</option>
+                                        <option>Machine Learning</option>
+                                        <option>Web Development</option>
+                                    </select>
+                                </div>
+                                <div class="config-group">
+                                    <label>Difficulty Level</label>
+                                    <select>
+                                        <option>Beginner</option>
+                                        <option>Intermediate</option>
+                                        <option>Advanced</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="model-preview">
+                        <h3>Preview Your AI Tutor</h3>
+                        <div class="preview-window">
+                            <div class="chat-interface">
+                                <div class="message ai">
+                                    <p>Hello! I'm your custom AI tutor. How can I help you today?</p>
+                                </div>
+                                <div class="chat-input">
+                                    <input type="text" placeholder="Ask a question...">
+                                    <button class="btn primary"><i class="fas fa-paper-plane"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="modules-sidebar">
+            <div class="sidebar-section">
+                <h3>AI Playground</h3>
+                <div class="playground-tools">
+                    <div class="tool-card">
+                        <h4>Personalization Simulator</h4>
+                        <div class="slider-group">
+                            <label>Learning Speed</label>
+                            <input type="range" min="0" max="100" value="50">
+                        </div>
+                        <div class="slider-group">
+                            <label>Content Depth</label>
+                            <input type="range" min="0" max="100" value="75">
+                        </div>
+                        <button class="btn secondary">Update Recommendations</button>
+                    </div>
+                    <div class="tool-card">
+                        <h4>Code Review Bot</h4>
+                        <textarea placeholder="Paste code for review..."></textarea>
+                        <button class="btn secondary">Get Feedback</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Recent Activity</h3>
+                <div class="activity-feed">
+                    <div class="activity-item">
+                        <i class="fas fa-code"></i>
+                        <div class="activity-content">
+                            <p>Generated Python decorator examples</p>
+                            <span class="time">2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <i class="fas fa-project-diagram"></i>
+                        <div class="activity-content">
+                            <p>Created sequence diagram for API flow</p>
+                            <span class="time">5 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <i class="fas fa-rocket"></i>
+                        <div class="activity-content">
+                            <p>Started new project: E-commerce Platform</p>
+                            <span class="time">1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>EduVenture Nexus is a transformative platform combining AI, VR/AR, and global community for education and innovation.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="startups.html">Startups</a></li>
+                    <li><a href="your-plan.html">Your Plan</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="ai-modules.html">AI Modules</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EduVenture Nexus. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AI Chat Widget -->
+    <div class="ai-chat-widget">
+        <button class="chat-toggle">
+            <i class="fas fa-robot"></i>
+            <span>AI Assistant</span>
+        </button>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h4>AI Assistant</h4>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <div class="message ai">
+                    <p>Hello! How can I help you with AI-powered learning today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

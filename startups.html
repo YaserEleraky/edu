@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startups - EduVenture Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="startups.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>EduVenture Nexus</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="startups.html">Startups</a></li>
+            <li><a href="your-plan.html">Your Plan</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="ai-modules.html">AI Modules</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="feed.html">Feed</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn secondary">Login</a>
+            <a href="signup.html" class="btn primary">Sign Up</a>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="startups-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Startup Dashboard</h2>
+                <div class="ai-status">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Assistant Active</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="#ideas" class="nav-item active">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Ideas</span>
+                </a>
+                <a href="#matches" class="nav-item">
+                    <i class="fas fa-handshake"></i>
+                    <span>Matches</span>
+                </a>
+                <a href="#milestones" class="nav-item">
+                    <i class="fas fa-flag-checkered"></i>
+                    <span>Milestones</span>
+                </a>
+                <a href="#resources" class="nav-item">
+                    <i class="fas fa-book"></i>
+                    <span>Resources</span>
+                </a>
+            </nav>
+
+            <div class="startup-progress">
+                <h3>Your Progress</h3>
+                <div class="progress-steps">
+                    <div class="step completed">
+                        <div class="step-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span>Idea Submission</span>
+                    </div>
+                    <div class="step active">
+                        <div class="step-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <span>Team Building</span>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <span>Growth</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Panel -->
+        <main class="main-panel">
+            <div class="panel-header">
+                <h1>Startup Studio</h1>
+                <div class="ai-suggestions">
+                    <div class="suggestion-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <p>Your pitch deck needs more market validation data</p>
+                        <button class="btn primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pitch-studio">
+                <div class="pitch-header">
+                    <h2>Pitch Deck Builder</h2>
+                    <div class="pitch-actions">
+                        <button class="btn secondary"><i class="fas fa-upload"></i> Upload</button>
+                        <button class="btn primary"><i class="fas fa-magic"></i> AI Enhance</button>
+                    </div>
+                </div>
+
+                <div class="pitch-slides">
+                    <div class="slide-card">
+                        <div class="slide-number">1</div>
+                        <div class="slide-content">
+                            <h3>Problem Statement</h3>
+                            <div class="ai-feedback">
+                                <span class="feedback-tag">Needs Improvement</span>
+                                <p>Add specific market size data and pain points</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-card">
+                        <div class="slide-number">2</div>
+                        <div class="slide-content">
+                            <h3>Solution</h3>
+                            <div class="ai-feedback">
+                                <span class="feedback-tag positive">Strong</span>
+                                <p>Clear value proposition and technical approach</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-matching">
+                <h2>Investor Matches</h2>
+                <div class="match-filters">
+                    <div class="filter-group">
+                        <label>Investment Stage</label>
+                        <select>
+                            <option>Seed</option>
+                            <option>Series A</option>
+                            <option>Series B</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Check Size</label>
+                        <select>
+                            <option>$100K - $500K</option>
+                            <option>$500K - $1M</option>
+                            <option>$1M+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="investor-cards">
+                    <div class="investor-card">
+                        <div class="investor-header">
+                            <img src="https://via.placeholder.com/60" alt="Investor" class="investor-img">
+                            <div class="investor-info">
+                                <h3>TechVentures Capital</h3>
+                                <p>Focus: AI & Deep Tech</p>
+                            </div>
+                            <div class="match-score">
+                                <div class="score-circle">
+                                    <span>87%</span>
+                                    <div class="progress-ring"></div>
+                                </div>
+                                <span>Match</span>
+                            </div>
+                        </div>
+                        <div class="investor-details">
+                            <div class="tags">
+                                <span class="tag">AI/ML</span>
+                                <span class="tag">Deep Tech</span>
+                                <span class="tag">Seed Stage</span>
+                            </div>
+                            <p>Recent investments in AI startups...</p>
+                        </div>
+                        <div class="investor-actions">
+                            <button class="btn primary">Connect</button>
+                            <button class="btn secondary">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Toolbar -->
+        <aside class="toolbar">
+            <div class="tool-section">
+                <h3>Next Steps</h3>
+                <div class="action-list">
+                    <div class="action-item">
+                        <i class="fas fa-file-alt"></i>
+                        <div class="action-content">
+                            <h4>Complete Business Plan</h4>
+                            <p>AI suggests adding market size analysis</p>
+                        </div>
+                    </div>
+                    <div class="action-item">
+                        <i class="fas fa-users"></i>
+                        <div class="action-content">
+                            <h4>Team Building</h4>
+                            <p>Find technical co-founder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-section">
+                <h3>Resource Library</h3>
+                <div class="resource-cards">
+                    <div class="resource-card">
+                        <i class="fas fa-file-contract"></i>
+                        <h4>Term Sheet Template</h4>
+                        <p>AI-optimized for seed rounds</p>
+                        <button class="btn secondary">Download</button>
+                    </div>
+                    <div class="resource-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <h4>Financial Model</h4>
+                        <p>Pre-built for SaaS startups</p>
+                        <button class="btn secondary">Use Template</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-section">
+                <h3>Pitch Gym</h3>
+                <div class="pitch-gym">
+                    <div class="gym-stats">
+                        <div class="stat">
+                            <span class="label">Clarity Score</span>
+                            <span class="value">85%</span>
+                        </div>
+                        <div class="stat">
+                            <span class="label">Pace</span>
+                            <span class="value">Optimal</span>
+                        </div>
+                    </div>
+                    <button class="btn primary">Start Practice</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>EduVenture Nexus is a transformative platform combining AI, VR/AR, and global community for education and innovation.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="startups.html">Startups</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EduVenture Nexus. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AI Chat Widget -->
+    <div class="ai-chat-widget">
+        <button class="chat-toggle">
+            <i class="fas fa-robot"></i>
+            <span>AI Assistant</span>
+        </button>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h4>AI Assistant</h4>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <div class="message ai">
+                    <p>Hello! How can I help you with your startup journey today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

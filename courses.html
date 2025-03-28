@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - EduVenture Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>EduVenture Nexus</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="startups.html">Startups</a></li>
+            <li><a href="your-plan.html">Your Plan</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="ai-modules.html">AI Modules</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="feed.html">Feed</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn secondary">Login</a>
+            <a href="signup.html" class="btn primary">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="courses-container">
+        <!-- Left Sidebar -->
+        <aside class="courses-sidebar">
+            <div class="sidebar-header">
+                <h2>Course Categories</h2>
+                <div class="ai-recommendations">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Recommended</span>
+                </div>
+            </div>
+            <div class="course-tree">
+                <div class="course-category">
+                    <div class="category-header">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                        <span class="completion-time">~40 hours</span>
+                    </div>
+                    <ul class="course-list">
+                        <li class="course-item">
+                            <a href="#python-basics" class="active">
+                                <span class="course-title">Python Basics</span>
+                                <span class="course-progress">[====......] 40%</span>
+                            </a>
+                        </li>
+                        <li class="course-item">
+                            <a href="#python-advanced">
+                                <span class="course-title">Advanced Python</span>
+                                <span class="course-progress">[==........] 20%</span>
+                            </a>
+                        </li>
+                        <li class="course-item ai-recommended">
+                            <a href="#python-ai">
+                                <span class="course-title">AI with Python</span>
+                                <span class="course-progress">[..........] 0%</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="course-category">
+                    <div class="category-header">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <span class="completion-time">~35 hours</span>
+                    </div>
+                    <ul class="course-list">
+                        <li class="course-item">
+                            <a href="#js-basics">
+                                <span class="course-title">JavaScript Basics</span>
+                                <span class="course-progress">[==........] 20%</span>
+                            </a>
+                        </li>
+                        <li class="course-item">
+                            <a href="#js-advanced">
+                                <span class="course-title">Advanced JavaScript</span>
+                                <span class="course-progress">[..........] 0%</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="courses-main">
+            <div class="course-header">
+                <h1>Python Basics</h1>
+                <div class="course-meta">
+                    <span class="difficulty">Beginner</span>
+                    <span class="duration">2 hours</span>
+                    <span class="last-updated">Updated: March 2024</span>
+                </div>
+            </div>
+
+            <div class="course-content">
+                <div class="code-example">
+                    <div class="code-header">
+                        <h3>Example 1: Hello World</h3>
+                        <div class="code-actions">
+                            <button class="btn primary"><i class="fas fa-play"></i> Run</button>
+                            <button class="btn secondary"><i class="fas fa-copy"></i> Copy</button>
+                        </div>
+                    </div>
+                    <div class="code-editor">
+                        <pre><code class="language-python">print("Hello, World!")
+
+# This is a simple Python program
+# that prints "Hello, World!" to the console</code></pre>
+                    </div>
+                    <div class="code-output">
+                        <h4>Output:</h4>
+                        <pre>Hello, World!</pre>
+                    </div>
+                </div>
+
+                <div class="video-lecture">
+                    <h3>Video Explanation</h3>
+                    <div class="video-container">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Click to start video</span>
+                        </div>
+                    </div>
+                    <div class="video-chapters">
+                        <h4>Chapters:</h4>
+                        <ul>
+                            <li>00:00 - Introduction</li>
+                            <li>02:15 - Basic Syntax</li>
+                            <li>05:30 - Variables</li>
+                            <li>08:45 - Practice Exercise</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="interactive-exercise">
+                    <h3>Try It Yourself</h3>
+                    <div class="exercise-editor">
+                        <div class="editor-header">
+                            <span>Python Editor</span>
+                            <div class="editor-actions">
+                                <button class="btn secondary"><i class="fas fa-redo"></i> Reset</button>
+                                <button class="btn primary"><i class="fas fa-play"></i> Run</button>
+                            </div>
+                        </div>
+                        <div class="editor-content">
+                            <textarea placeholder="Write your code here..."></textarea>
+                        </div>
+                        <div class="editor-output">
+                            <h4>Output:</h4>
+                            <pre></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ai-tutor">
+                    <h3>AI Tutor</h3>
+                    <div class="tutor-chat">
+                        <div class="chat-messages">
+                            <div class="message ai">
+                                <p>Hi! I'm your AI tutor. How can I help you with Python today?</p>
+                            </div>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" placeholder="Ask a question...">
+                            <button class="btn primary"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-navigation">
+                <a href="#" class="btn secondary"><i class="fas fa-arrow-left"></i> Previous</a>
+                <a href="#" class="btn primary">Next <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </main>
+
+        <!-- Right Tools Panel -->
+        <aside class="tools-panel">
+            <div class="panel-section">
+                <h3>Progress Tracker</h3>
+                <div class="progress-visual">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%"></div>
+                    </div>
+                    <p>2/5 modules completed</p>
+                </div>
+            </div>
+
+            <div class="panel-section">
+                <h3>AI Recommendations</h3>
+                <ul class="recommendations-list">
+                    <li>
+                        <i class="fas fa-star"></i>
+                        <span>Focus on Functions next</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Practice with loops</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="panel-section">
+                <h3>Quick Tools</h3>
+                <div class="tools-grid">
+                    <button class="tool-btn">
+                        <i class="fas fa-book"></i>
+                        <span>Documentation</span>
+                    </button>
+                    <button class="tool-btn">
+                        <i class="fas fa-code-branch"></i>
+                        <span>Examples</span>
+                    </button>
+                    <button class="tool-btn">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Help</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>EduVenture Nexus is a transformative platform combining AI, VR/AR, and global community for education and innovation.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="#community">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EduVenture Nexus. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AI Chat Widget -->
+    <div class="ai-chat-widget">
+        <button class="chat-toggle">
+            <i class="fas fa-robot"></i>
+            <span>AI Assistant</span>
+        </button>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h4>AI Assistant</h4>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <div class="message ai">
+                    <p>Hello! How can I help you with your learning today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

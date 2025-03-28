@@ -1,0 +1,991 @@
+/* AI Modules Layout */
+.ai-modules-container {
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    min-height: calc(100vh - 80px);
+    margin-top: 80px;
+    background: var(--light-color);
+    padding: 2rem;
+    gap: 2rem;
+}
+
+/* Sidebar Styles */
+.modules-sidebar {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+    margin-bottom: 2rem;
+}
+
+.sidebar-header h2 {
+    margin: 0 0 0.5rem;
+    color: var(--dark-color);
+}
+
+.ai-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+.modules-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    color: var(--dark-color);
+    text-decoration: none;
+    transition: all var(--transition-speed);
+}
+
+.nav-item i {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.nav-item:hover,
+.nav-item.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.nav-item:hover i,
+.nav-item.active i {
+    color: white;
+}
+
+.quick-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.stat-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--light-color);
+    border-radius: 5px;
+}
+
+.stat-card i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-info .label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.stat-info .value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+/* Main Panel Styles */
+.modules-main {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.panel {
+    display: none;
+}
+
+.panel.active {
+    display: block;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.ai-filter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+/* Generation Form */
+.generation-form {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+.form-group input,
+.form-group select {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.generation-preview {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.preview-content {
+    margin-top: 1rem;
+}
+
+.content-section {
+    margin-bottom: 1.5rem;
+}
+
+.code-example {
+    background: #1e1e1e;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.code-example pre {
+    margin: 0;
+    color: #fff;
+    font-family: monospace;
+}
+
+/* Problem Generator */
+.difficulty-selector {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.difficulty-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--light-color);
+    color: var(--dark-color);
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.difficulty-btn.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.problem-card {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.problem-header {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.difficulty-tag,
+.topic-tag {
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.difficulty-tag {
+    background: #FFD700;
+    color: #000;
+}
+
+.topic-tag {
+    background: var(--primary-color);
+    color: white;
+}
+
+.code-template {
+    background: #1e1e1e;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.code-template pre {
+    margin: 0;
+    color: #fff;
+    font-family: monospace;
+}
+
+.test-cases {
+    margin: 1rem 0;
+}
+
+.test-cases ul {
+    list-style: none;
+    padding: 0;
+}
+
+.test-cases li {
+    padding: 0.5rem;
+    background: #f5f5f5;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+/* Example Generator */
+.example-filters {
+    display: flex;
+    gap: 1rem;
+}
+
+.example-card {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.example-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.language-tag {
+    padding: 0.3rem 0.8rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.visualization {
+    margin: 1rem 0;
+}
+
+.stack-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stack-item {
+    padding: 0.5rem;
+    background: #f5f5f5;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Search Interface */
+.search-box {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.result-card {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.relevance {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.result-meta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Think With Me Interface */
+.think-interface {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 300px);
+}
+
+.chat-history {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    background: var(--light-color);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.message {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.message.user {
+    background: var(--primary-color);
+    color: white;
+    margin-left: 2rem;
+}
+
+.message.ai {
+    background: white;
+    color: var(--dark-color);
+    margin-right: 2rem;
+}
+
+.message.ai ol {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.chat-input {
+    display: flex;
+    gap: 1rem;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Diagram Generator */
+.diagram-generator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.code-input textarea {
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: monospace;
+    resize: vertical;
+}
+
+.diagram-preview {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    min-height: 300px;
+}
+
+/* Project Generator */
+.project-card {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.complexity {
+    padding: 0.3rem 0.8rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.project-timeline {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item {
+    background: white;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.phase {
+    display: block;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.tech-stack {
+    margin-bottom: 1.5rem;
+}
+
+.stack-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.stack-tags span {
+    padding: 0.3rem 0.8rem;
+    background: white;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+/* AI Playground */
+.playground-tools {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tool-card {
+    background: var(--light-color);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.slider-group {
+    margin: 1rem 0;
+}
+
+.slider-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.slider-group input[type="range"] {
+    width: 100%;
+}
+
+/* Activity Feed */
+.activity-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.activity-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--light-color);
+    border-radius: 5px;
+}
+
+.activity-item i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.activity-content {
+    flex: 1;
+}
+
+.activity-content p {
+    margin: 0;
+    color: var(--dark-color);
+}
+
+.time {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.3rem;
+}
+
+/* AI Transparency Lab */
+.transparency-lab {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.model-visualization {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.model-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.flow-step {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.step-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.data-preview {
+    margin-top: 1rem;
+}
+
+.data-item {
+    margin-bottom: 1rem;
+}
+
+.data-item .label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.progress-bar {
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.model-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.model-metric {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.metric-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.recommendation-list {
+    margin-top: 1rem;
+}
+
+.recommendation-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.recommendation-item i {
+    color: var(--primary-color);
+}
+
+.explainability-interface {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.explanation-content {
+    margin-top: 1rem;
+}
+
+.explanation-section {
+    margin-bottom: 1.5rem;
+}
+
+.explanation-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.explanation-section li {
+    padding: 0.5rem;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.confidence-visual {
+    margin-top: 1rem;
+}
+
+.confidence-bar {
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.confidence-level {
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.confidence-value {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Ethical AI Sandbox */
+.sandbox-interface {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.bias-mitigation {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.bias-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.metric-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.metric-card h4 {
+    margin: 0 0 0.5rem;
+    color: var(--dark-color);
+}
+
+.metric-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+}
+
+.metric-bar {
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0.5rem 0;
+}
+
+.bar-fill {
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.metric-label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.fairness-experiments {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.experiment-grid {
+    margin-top: 1rem;
+}
+
+.experiment-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.experiment-controls {
+    margin: 1rem 0;
+}
+
+.experiment-controls label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.experiment-controls input[type="range"] {
+    width: 100%;
+}
+
+.experiment-results {
+    margin-top: 1rem;
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.result-item span {
+    min-width: 60px;
+}
+
+.result-bar {
+    flex: 1;
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Model Playground */
+.playground-interface {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.model-builder {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.component-palette {
+    margin-bottom: 2rem;
+}
+
+.component-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.component-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: move;
+    transition: all var(--transition-speed);
+}
+
+.component-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.component-item i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.model-canvas {
+    margin: 2rem 0;
+}
+
+.canvas-area {
+    min-height: 300px;
+    border: 2px dashed #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.drop-zone {
+    text-align: center;
+    color: #666;
+}
+
+.model-config {
+    margin-top: 2rem;
+}
+
+.config-options {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.config-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.config-group label {
+    color: var(--dark-color);
+}
+
+.config-group select {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.model-preview {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.preview-window {
+    margin-top: 1rem;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.chat-interface {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-interface .message {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.chat-interface .message.ai {
+    background: var(--light-color);
+    color: var(--dark-color);
+    margin-right: auto;
+}
+
+.chat-interface .chat-input {
+    margin-top: auto;
+    padding: 1rem;
+    border-top: 1px solid #eee;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .ai-modules-container {
+        grid-template-columns: 1fr;
+    }
+    .modules-sidebar {
+        display: none;
+    }
+    .transparency-lab,
+    .sandbox-interface,
+    .playground-interface {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .diagram-generator {
+        grid-template-columns: 1fr;
+    }
+    .project-timeline {
+        grid-template-columns: 1fr;
+    }
+    .panel-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .example-filters,
+    .project-filters {
+        flex-direction: column;
+    }
+    .bias-metrics {
+        grid-template-columns: 1fr;
+    }
+    .component-list {
+        grid-template-columns: 1fr;
+    }
+} 
